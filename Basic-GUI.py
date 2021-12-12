@@ -51,18 +51,17 @@ def sumdata():
 
 	return(sumquan,sumtotal)
 
-
 # ----------------------------
 
 GUI = Tk()
 GUI.geometry('500x500')
-GUI.title('Program By Hery')
+GUI.title('Program By Hery v.0.0.1')
 
 file = PhotoImage(file='books.png')
 IMG = Label(GUI,image=file,text='')
 IMG.pack()
 
-L1 = Label(GUI,text='ໂປຣແກຣມຄຳນວນຂາຍໜັງສື',font=(None,15,'bold'),fg='grey')
+L1 = Label(GUI,text='ໂປຣແກຣມຄຳນວນຂາຍໜັງສື (ຫົວ)',font=(None,15,'bold'),fg='grey')
 L1.pack() # .place(x,y), .grid(row=0,column=0)
 
 L2 = Label(GUI,text='ກະລຸນາໃສ່ຈຳນວນໜັງສື',font=(None,10),fg='grey')
@@ -80,11 +79,6 @@ def Calculate(event=None):
 	cal = float(quantity) * price
 	# EN Date
 	# stamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-
-	# # TH Date
-	# stamp = datetime.now()
-	# stamp = stamp.replace(year=stamp.year+543) # ບວກເປັນ ພສ
-	# stamp = stamp.strftime('%Y-%m-%d, %H:%M:%S')
 
 	# writetext(quantity,cal)
 	data = [timestamp(), quantity,cal]
